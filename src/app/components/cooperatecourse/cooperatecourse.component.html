@@ -1,0 +1,63 @@
+<!-- <section class="cooperate">
+   
+
+
+
+    <div class="slant">
+        <h1>Cooperate Course</h1>
+        <img src="../../../assets/img/Accountant-amico.svg">
+        <div class="slantdiv"></div>
+    </div>
+</section> -->
+
+
+<section class="slant">
+    <br><br><br><br><br><br>
+    <div class="content">
+        <h1>Cooperate Courses</h1>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</section>
+<!-- ///////////////////////// -->
+><br><br><br><br>
+
+<!-- <section class="coursecards">
+    <div container>
+     <div class="row my-5 cardsrow"  *ngFor="let course of data">
+         <div class="col-lg-4 mb-4">
+                <div class="card">
+           <div class="card-image"><img src="{{course.img1}}"></div>
+           <div class="card-text">
+             <h2>{{course.name}}</h2>
+             <p>{{course.about}}</p>
+           </div>
+           <div class="card-stats">
+            
+             <div class="stat border">
+               <a (click)='getDetails(course.name)'>Read more</a></div>
+             </div> 
+            
+           </div>
+   
+               </div>
+         </div>
+ 
+   
+   </div>
+ </section> -->
+
+<section>
+ <div class="container">
+  <div class="row text-center">
+  
+      <div class="col-xl-4 col-sm-6 mb-5 "   *ngFor="let course of data">
+  <div class="card transition">
+      <h2 class="transition">{{course.name}}</h2>
+      <p>{{course.about}}</p>
+      <div class="cta-container transition">  <a (click)='getDetails(course.name)' class="cta" >Read more</a></div>
+      <div ><img  class="card_circle transition" src="{{course.img1}}"></div>
+    </div>
+
+  </div>
+</div>  
+ </div>  </section>
